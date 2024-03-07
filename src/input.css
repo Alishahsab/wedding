@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "newfont";
+    src: url("../src/font/Brandon_reg.otf");
+  };
+  @font-face {
+    font-family: "newlibre";
+    src: url("../src/font/LibreCaslonText-Regular.ttf");
+  };
+  @font-face {
+    font-family: "Otamendi";
+    src: url("../src/font/Otamendi.ttf");
+  };
+
+@layer utilities {
+    .heading {
+        @apply text-lg text-white;
+    }
+    .footer-hover {
+        @apply hover:text-primary;
+    }
+    .btn{
+        @apply bg-primary text-white font-semibold py-3 px-6 rounded-[8px];
+    }
+    .head-links {
+        @apply hover:text-primary hover:border-solid hover:border-b hover:border-[#DB004B] ;
+    }
+}
